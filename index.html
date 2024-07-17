@@ -1,12 +1,77 @@
+<!-- based on www.porsche.com -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="assets/images/Porsche-Logo-PNG-Pic2 - Copy.png"
+      type="image/png"
+    />
+    <title>Porsche Asia</title>
+  </head>
+  <body>
+    <!-- start dark/light btn -->
+    <div id="dark-light"  class="ml-2 w-12 h-12 rounded-full fixed left-0 top-3/4 flex justify-center items-center border-gradient">          
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+    </svg> 
+</div>
+    <!-- end dark/light btn  -->
+    <!-- start header -->
+    <header>
+        <!-- start navbar -->
+      <nav class="w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-red-950">
+        <div id="hamburger-menu" class="flex items-center gap-2 w-1/4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <a href class="text-lg">Menu</a>
+        </div>
+        <div id="logo" class="w-1/2 cursor-pointer mx-auto flex justify-center">
+          <img
+            src="assets/images/Porsche_wordmark.png"
+            class="object-cover w-52 hidden sm:inline-block"
+            alt="logo"
+          />
+          <img src="assets/images/Porsche-Logo-PNG-Pic2 - Copy.png" class="w-10 h-10 sm:hidden" alt="logo">
+        </div>
+        <div id="nav-key" class="w-1/4 flex justify-end cursor-pointer">
+           <div class="bg-gradient-to-r from-red-950 via-red-600 to-black text-gray-100 hover:scale-105 transition-all duration-500 rounded-md
+           py-2 px-3 relative before:content-[''] before:w-full before:transition-all before:duration-500 before:h-0 before:rounded-md before:bg-black before:bottom-0 before:left-0 before:absolute
+           hover:before:h-full before:-z-10 hidden md:inline-block w-fit ">
+          <a
+            href
+            class="text-base z-10 "
+            >Porsche near you</a
+          >
+        </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+       <div id="div">
+
+       </div>
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <!-- end main -->
+    <!-- start footer -->
+    <!-- end footer -->
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
