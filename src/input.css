@@ -52,7 +52,12 @@
     z-index: -2;
     animation: animate-ring 1s  infinite;
 }
-
+.border-gradient:hover{
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 1);
+}
+.hide{
+    display: none;
+}
 /* colors:light:
 red-950
 red-600

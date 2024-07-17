@@ -14,16 +14,16 @@
   </head>
   <body>
     <!-- start dark/light btn -->
-    <div id="dark-light"  class="ml-2 w-12 h-12 rounded-full fixed left-0 top-3/4 flex justify-center items-center border-gradient">          
+    <div id="dark-light"  class="ml-2 w-12 h-12 rounded-full fixed left-0 top-3/4 flex justify-center items-center border-gradient cursor-pointer hover:translate-x-2 transition-all duration-500">          
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
     </svg> 
-</div>
+     </div>
     <!-- end dark/light btn  -->
     <!-- start header -->
     <header>
         <!-- start navbar -->
-      <nav class="w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-red-950">
+      <nav class="w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black">
         <div id="hamburger-menu" class="flex items-center gap-2 w-1/4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 cursor-pointer"
+            class="size-6 cursor-pointer dark:text-white"
           >
             <path
               stroke-linecap="round"
@@ -39,7 +39,7 @@
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          <a href class="text-lg">Menu</a>
+          <a href class="text-lg dark:text-white">Menu</a>
         </div>
         <div id="logo" class="w-1/2 cursor-pointer mx-auto flex justify-center">
           <img
@@ -52,19 +52,17 @@
         <div id="nav-key" class="w-1/4 flex justify-end cursor-pointer">
            <div class="bg-gradient-to-r from-red-950 via-red-600 to-black text-gray-100 hover:scale-105 transition-all duration-500 rounded-md
            py-2 px-3 relative before:content-[''] before:w-full before:transition-all before:duration-500 before:h-0 before:rounded-md before:bg-black before:bottom-0 before:left-0 before:absolute
-           hover:before:h-full before:-z-10 hidden md:inline-block w-fit ">
+           hover:before:h-full before:-z-10 hidden md:inline-block w-fit dark:shadow-sm dark:shadow-white dark:from-black dark:via-gray-500 dark:to-black
+           ">
           <a
             href
-            class="text-base z-10 "
+            class="text-base z-10"
             >Porsche near you</a
           >
         </div>
         </div>
       </nav>
       <!-- end navbar -->
-       <div id="div">
-
-       </div>
     </header>
     <!-- end header -->
     <!-- start main -->
