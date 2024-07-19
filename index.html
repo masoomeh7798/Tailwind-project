@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- start dark/light btn -->
-    <div id="dark-light"  class="ml-2 w-12 h-12 rounded-full fixed left-0 top-3/4 flex justify-center items-center border-gradient cursor-pointer hover:translate-x-2 transition-all duration-500">          
+    <div id="dark-light"  class="ml-4 w-12 h-12 rounded-full fixed left-0 top-[80%] flex justify-center items-center border-gradient cursor-pointer hover:translate-x-2 transition-all duration-500">          
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
     </svg> 
@@ -23,7 +23,7 @@
     <!-- start header -->
     <header>
         <!-- start navbar -->
-      <nav class="w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black">
+      <nav class="bg-white fixed top-0 left-0 right-0 w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black">
         <div id="hamburger-menu" class="flex items-center gap-2 w-1/4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,9 +31,9 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 cursor-pointer dark:text-white"
+            class="size-6 cursor-pointer  dark:text-white"
           >
-            <path
+            <path 
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
@@ -63,6 +63,71 @@
         </div>
       </nav>
       <!-- end navbar -->
+       <!-- start slider -->
+        <section id="slider" class="p-10 md:mt-[88px] hidden lg:flex justify-between h-[80dvh] max-h-[600px] ">
+            <div class="slider-slides animate-up-down cursor-pointer relative shadow-md transition-all duration-500 w-[24%] h-full rounded-md overflow-hidden ">
+                <img class="w-full h-full object-center rounded-md object-cover " src="assets/images/slider/porsche-normal.webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 shadow-sm shadow-black/50 absolute left-[5%] bottom-[5%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">WEC São Paulo.</h2>
+                    <p class="text-black font-semibold">6 Hours Race Highlights.</p>
+                </div>    
+            </div>
+            <div class="slider-slides animate-down-up cursor-pointer  relative shadow-md transition-all duration-500 w-[24%] h-full rounded-md overflow-hidden ">
+                <img class="w-full h-full object-center rounded-md object-cover " src="assets/images/slider/porsche-normal(2).webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 shadow-sm shadow-black/50 absolute left-[5%] bottom-[5%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">The one and always.</h2>
+                    <p class="text-black font-semibold">The new 911.</p>
+                </div>    
+            </div>
+            <div class="slider-slides animate-up-down cursor-pointer  relative shadow-md transition-all duration-500 w-[24%] h-full rounded-md overflow-hidden ">
+                <img class="w-full h-full object-center rounded-md object-cover " src="assets/images/slider/porsche-normal(3).webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 shadow-sm shadow-black/50 absolute left-[5%] bottom-[5%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">Keep your essence.</h2>
+                    <p class="text-black font-semibold">The new all-electric Macan</p>
+                </div>    
+            </div>
+            <div class="slider-slides animate-down-up cursor-pointer relative shadow-md transition-all duration-500 w-[24%] h-full rounded-md overflow-hidden ">
+                <img class="w-full h-full object-center rounded-md object-cover " src="assets/images/slider/porsche-normal(1).webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 shadow-sm shadow-black/50 absolute left-[5%] bottom-[5%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">Overfeel.</h2>
+                    <p class="text-black font-semibold">The new Taycan</p>
+                </div>    
+            </div>
+        </section>
+        <section id="slider-2" class=" mt-[72px] md:mt-[88px] lg:hidden h-[60dvh]
+        max-h-[350px] sm:h-[80dvh] sm:max-h-[600px] ">
+            <div class="w-full h-full relative">
+            <div class="cursor-pointer  absolute  shadow-md transition-all duration-500 w-full h-full invisible opacity-0 show ">
+                <img class="w-full h-full object-center   object-cover " src="assets/images/slider/porsche-normal.webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 hover:scale-110 shadow-sm shadow-black/50 absolute right-[5%] bottom-[7%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">WEC São Paulo.</h2>
+                    <p class="text-black font-semibold">6 Hours Race Highlights.</p>
+                </div>    
+            </div>
+            <div class=" cursor-pointer  absolute   shadow-md transition-all duration-500 w-full h-full invisible opacity-0 ">
+                <img class="w-full h-full object-center   object-cover " src="assets/images/slider/porsche-normal(2).webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 hover:scale-110 shadow-sm shadow-black/50 absolute right-[5%] bottom-[7%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">The one and always.</h2>
+                    <p class="text-black font-semibold">The new 911.</p>
+                </div>    
+            </div>
+            <div class="cursor-pointer  absolute   shadow-md transition-all duration-500 w-full h-full invisible opacity-0 ">
+                <img class="w-full h-full object-center   object-cover " src="assets/images/slider/porsche-normal(3).webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 hover:scale-110  shadow-sm shadow-black/50 absolute right-[5%] bottom-[7%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">Keep your essence.</h2>
+                    <p class="text-black font-semibold">The new all-electric Macan</p>
+                </div>    
+            </div>
+            <div class="cursor-pointer  absolute  shadow-md transition-all duration-500 w-full h-full invisible opacity-0 ">
+                <img class="w-full h-full object-center   object-cover " src="assets/images/slider/porsche-normal(1).webp" alt="banner">
+                <div class="banner-caption transition-all duration-500 hover:scale-110 shadow-sm shadow-black/50 absolute right-[5%] bottom-[7%] bg-black/10 backdrop-blur-md rounded-sm p-2">
+                    <h2 class="text-xl text-white">Overfeel.</h2>
+                    <p class="text-black font-semibold">The new Taycan</p>
+                </div>    
+            </div>
+        </div>
+        </section>
+       <!-- end slider -->
     </header>
     <!-- end header -->
     <!-- start main -->
