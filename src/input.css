@@ -54,12 +54,14 @@
 .banner-caption p{
     text-shadow: 1px 1px 2px white;
 }
-
 /* end slider */
 /* start general classes */
 .show{
     visibility: visible !important;
     opacity: 1 !important;
+}
+.width-up{
+    transform: translateX(0) ;
 }
 .hide{
     display: none;
@@ -136,6 +138,7 @@ red-950
 red-600
 black
 gray-100
+gray-200
 gray-500
 white
 */

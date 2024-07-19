@@ -64,6 +64,22 @@ setInterval(()=>{
 }
 
 // end slider
+// start hamburger menu
+const menuIconEl=document.querySelector('#hamburger-menu > div')
+const hamburgerPartEl=document.querySelector('#hamburger')
+const hamburgerPartContentEl=document.querySelector('#hamburger > div')
+const closeHamEl=document.querySelector('.close-hamburger')
+
+menuIconEl.addEventListener('click',()=>{
+    hamburgerPartEl.classList.add('show')
+    hamburgerPartContentEl.classList.add('width-up')
+})
+closeHamEl.addEventListener('click',()=>{
+    hamburgerPartEl.classList.remove('show')
+    hamburgerPartContentEl.classList.remove('width-up')
+})
+
+// end hamburger menu
 // start functions
 function bannerInterval(){
    interEnter=setInterval(()=>{

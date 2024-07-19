@@ -23,15 +23,16 @@
     <!-- start header -->
     <header>
         <!-- start navbar -->
-      <nav class="bg-white fixed top-0 left-0 right-0 w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black">
-        <div id="hamburger-menu" class="flex items-center gap-2 w-1/4">
+      <nav class="z-20 bg-white fixed top-0 left-0 right-0 w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black">
+        <div id="hamburger-menu" class=" w-1/4">
+            <div class="w-fit flex items-center gap-2 hover:bg-gray-200 hover:shadow-inner rounded-md p-2 transition-all duration-200 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 cursor-pointer  dark:text-white"
+            class="size-6 dark:text-white"
           >
             <path 
               stroke-linecap="round"
@@ -39,7 +40,7 @@
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          <a href class="text-lg dark:text-white">Menu</a>
+          <button class="text-lg dark:text-white">Menu</button></div>
         </div>
         <div id="logo" class="w-1/2 cursor-pointer mx-auto flex justify-center">
           <img
@@ -62,6 +63,90 @@
         </div>
         </div>
       </nav>
+      <!--start hamburger menu-->
+      <section id="hamburger" class="fixed top-0 left-0 right-0 bottom-0 bg-black/50 z-30 backdrop-blur-xl invisible opacity-0 transition-all duration-500">
+       <div class="bg-white h-full w-2/3 -translate-x-full relative flex transition-all duration-500">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close-hamburger size-10 
+        absolute top-5 -right-[60px]  cursor-pointer text-white rounded-md  hover:bg-gray-200 hover:text-black hover:shadow-sm hover:shadow-black/50 transition-all duration-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          <div id="hamburger-left" class="w-1/2 h-full px-[5%] py-[8%]">
+            <ul>
+                <li class="flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-100 items-center
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-model">Model
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </li>
+                <li class="flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-200 items-center
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-vehicle">Vehicle Purchase
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </li>
+                <li class="flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-300 items-center
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-service">Service
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </li>
+                <li class="flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-400 items-center
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-experience">Experiences
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </li>
+                <li class="flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-500 items-center
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-dealer">Find a Dealer
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  </li>
+            </ul>
+          </div> 
+          <div id="hamburger-right" class="w-1/2 h-full bg-gray-100">
+            <div id="model" class="transition-all duration-500 overflow-y-scroll h-full">
+                <div class="w-full flex items-center justify-center flex-col gap-2 px-[10%] py-[15%]">
+                <div class="rounded-md w-2/3 p-2 cursor-pointer border"><img class="w-full h-auto" src="assets/images/mega-menu-cars/911.webp" alt=""></div>
+                <div class="rounded-md w-2/3 p-2 cursor-pointer border"><img class="w-full h-auto" src="assets/images/mega-menu-cars/cayenne.webp" alt=""></div>
+                <div class="rounded-md w-2/3 p-2 cursor-pointer border"><img class="w-full h-auto" src="assets/images/mega-menu-cars/macan.webp" alt=""></div>
+                <div class="rounded-md w-2/3 p-2 cursor-pointer border"><img class="w-full h-auto" src="assets/images/mega-menu-cars/panamera.webp" alt=""></div>
+                <div class="rounded-md w-2/3 p-2 cursor-pointer border"><img class="w-full h-auto" src="assets/images/mega-menu-cars/718.webp" alt=""></div>
+                <div class="rounded-md w-2/3 p-2 cursor-pointer border "><img class="w-full h-auto" src="assets/images/mega-menu-cars/taycan.webp" alt=""></div>
+            </div>
+            </div>
+            <div id="vehicle" class="transition-all duration-500 px-[10%] w-full border py-[16.5%] h-full hidden">
+                <ul>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh] ">Configure</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh] ">Compare Models</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh] ">Find New and Pre-owned Vehicles</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">E-Mobility & E-Performance</li>
+            </ul>
+            </div>
+            <div id="service" class="transition-all duration-500  px-[10%] w-full border py-[16.5%] h-full hidden">
+               <ul>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Factory Delivery</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Tequipment – Genuine Accessories</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Exclusive Manufaktur – Individual Vehicles</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Approved – Pre-owned Cars & Warranty</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Service & Maintenance</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Classic – Service & Parts</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Lifestyle – Fashion & Accessories</li>
+               </ul>
+            </div>
+            <div id="experience" class="transition-all duration-500 px-[10%] w-full border py-[16.5%] h-full hidden">
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Motorsport</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Porsche Experience – Driving & Track Experiences</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Porsche Clubs</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Golf Sports</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Christophorus – The Porsche Magazine</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Newsletter</li>
+                <li class="cursor-pointer text-xl px-3 py-2 hover:bg-gray-200 hover:shadow-inner transition-all duration-100 w-fit rounded-sm mb-[2vh]">Visit the Porsche Museum</li>
+            </div>
+          </div>
+       </div>
+      </section>
+      <!--end hamburger menu-->
       <!-- end navbar -->
        <!-- start slider -->
         <section id="slider" class="p-10 md:mt-[88px] hidden lg:flex justify-between h-[80dvh] max-h-[600px] ">
