@@ -1099,6 +1099,10 @@ video {
   transition-duration: 500ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -1534,6 +1538,11 @@ bg-zinc-950
     width: 80vw;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1571,6 +1580,10 @@ bg-zinc-950
 .dark\:bg-zinc-950:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-black\/50:where(.dark, .dark *) {
+  background-color: rgb(0 0 0 / 0.5);
 }
 
 .dark\:bg-gradient-to-r:where(.dark, .dark *) {
