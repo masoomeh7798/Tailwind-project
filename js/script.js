@@ -96,17 +96,25 @@ for(let i=0;i<hamburgerLeftLiEls.length-1;i++){
 }else{
     for(let i=0;i<hamburgerLeftLiEls.length-1;i++){
         hamburgerLeftLiEls[i].addEventListener('click',()=>{
+            hamburgerLeftLiEls.map(e=>{
+                e.classList.add('hide')  
+            })
             hamburgerRightEls.map(e=>{
                 e.classList.add('invisibility')
                 hamLeft.classList.add('width-zero')
                 hamRight.classList.add('width-full')
                 hamLeft.style.overflow='hidden'
                 hamLeft.style.padding='18% 0'
+                
             });
+
             document.querySelector(`#${hamburgerLeftLiEls[i].classList[0].split('-')[1]}`).classList.remove('invisibility')
         })
     } 
     backItemEl.addEventListener('click',()=>{
+        hamburgerLeftLiEls.map(e=>{
+            e.classList.remove('hide')  
+        })
       hamburgerRightEls.map(e=>{
         e.classList.add('invisibility')
       })
@@ -114,15 +122,34 @@ for(let i=0;i<hamburgerLeftLiEls.length-1;i++){
         hamRight.classList.remove('width-full')
         hamLeft.style.overflow='none'
         hamLeft.style.padding='18% 5%'
+
         if(window.screen.width<=350){
             hamLeft.style.padding='25% 5%'
 
         }
     })
 }
-
-
 // end hamburger menu
+// start models
+const leftActiveEls=[...document.querySelectorAll('.left-active-btn')]
+const rightActiveEls=[...document.querySelectorAll('.right-active-btn')]
+
+leftActiveEls.map(e=>{
+    e.addEventListener('click',()=>{
+    e.closest('div').children[2].style.transform='translateX(0)'
+    e.style.color='black'
+    rightActiveEls[leftActiveEls.indexOf(e)].style.color='white'
+    })
+})
+rightActiveEls.map(e=>{
+    e.addEventListener('click',()=>{
+    e.closest('div').children[2].style.transform='translateX(100%)'
+    e.style.color='black'
+    leftActiveEls[rightActiveEls.indexOf(e)].style.color='white'
+    })
+})
+
+// end models
 // start functions
 function bannerInterval(){
    interEnter=setInterval(()=>{

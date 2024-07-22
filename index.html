@@ -12,7 +12,7 @@
     />
     <title>Porsche Asia</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden dark:bg-black">
     <!-- start dark/light btn -->
     <div id="dark-light"  class="ml-4 w-12 h-12 rounded-full fixed left-0 top-[80%] flex justify-center items-center border-gradient cursor-pointer hover:translate-x-2 transition-all duration-500">          
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
@@ -23,7 +23,7 @@
     <!-- start header -->
     <header>
         <!-- start navbar -->
-      <nav class="z-20 bg-white fixed top-0 left-0 right-0 w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black">
+      <nav class="z-40 bg-white fixed top-0 left-0 right-0 w-full px-5 py-4 sm:px-10 sm:py-6 shadow-md flex justify-center  items-center dark:bg-gradient-to-r dark:from-black dark:via-gray-500 dark:to-black">
         <div id="hamburger-menu" class=" w-1/4">
             <div class="w-fit flex items-center gap-2 hover:bg-gray-200 hover:shadow-inner rounded-md p-2 transition-all duration-200 cursor-pointer">
           <svg
@@ -64,7 +64,7 @@
         </div>
       </nav>
       <!--start hamburger menu-->
-      <section id="hamburger" class="fixed top-0 left-0 right-0 bottom-0 bg-black/50 z-30 backdrop-blur-xl invisible opacity-0 transition-all duration-500">
+      <section id="hamburger" class="z-50 fixed top-0 left-0 right-0 bottom-0 bg-black/50 backdrop-blur-xl invisible opacity-0 transition-all duration-500">
        <div class="bg-white dark:bg-black h-full w-full  md:w-[80vw] lg:w-2/3 -translate-x-full relative flex transition-transform duration-500">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close-hamburger size-10 
         absolute top-[4%] right-[24px] z-30 md:-right-[60px]  cursor-pointer dark:text-white text-black  md:text-white rounded-md  hover:bg-gray-200 hover:text-black hover:shadow-sm hover:shadow-black/50 transition-all duration-500">
@@ -73,31 +73,31 @@
           <div id="hamburger-left" class="w-full sm:w-1/2 h-full px-[5%] py-[18%] sm:px-[5%] sm:py-[8%] z-20 bg-white dark:bg-black transition-all duration-200">
             <ul>
                 <li class="list-model flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-100 items-center
-                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-model">Model
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500 text-nowrap" id="item-model">Model
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                   </li>
                 <li class="list-vehicle flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-200 items-center
-                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-vehicle">Vehicle Purchase
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500 text-nowrap" id="item-vehicle">Vehicle Purchase
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                   </li>
                 <li class="list-service flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-300 items-center
-                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-service">Service
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500 text-nowrap" id="item-service">Service
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                   </li>
                 <li class="list-experience flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-400 items-center
-                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-experience">Experiences
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500 text-nowrap" id="item-experience">Experiences
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
                   </li>
                 <li class="flex justify-between mb-2 text-2xl py-3 px-5 cursor-pointer rounded-md bg-red-500 items-center
-                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500" id="item-dealer">Find a Dealer
+                hover:bg-gray-200 hover:shadow-black/30 hover:shadow-inner transition-all duration-500 text-nowrap" id="item-dealer">Find a Dealer
                   </li>
             </ul>
           </div> 
@@ -148,7 +148,6 @@
           </div>
        </div>
       </section>
-
       <!--end hamburger menu-->
       <!-- end navbar -->
        <!-- start slider -->
@@ -219,6 +218,67 @@
     </header>
     <!-- end header -->
     <!-- start main -->
+     <main>
+        <section id="models" class="">
+            <h2 class="text-2xl sm:text-4xl px-[5%] py-5 lg:py-10 dark:text-white">Models</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2 lg:w-1/3 overflow-hidden relative cursor-pointer group">
+                    <img src="assets/images/models/porschesmall (1).webp" class="w-full h-full object-bottom  hover:scale-110 transition-all duration-500" alt="models">
+                <h3 class="group-hover:text-black transition-all duration-500 absolute top-5 left-5 text-white hover:text-orange-800 shadow-xl px-3 py-1 rounded-md text-4xl">718</h3>
+                <div class="btn-bg-white   flex absolute w-72 left-5 bottom-5    text-gray-100 rounded-md">
+                    <button class="left-active-btn z-20 text-black flex-1 py-2 px-3 cursor-pointer" >Build Your Own</button>
+                    <button class="z-20 right-active-btn flex-1 cursor-pointer py-2 px-3 transition-all duration-500 " >all Models</button>
+                    <div class="z-10 absolute top-0 left-0 w-1/2 h-full bg-white/75 transition-all duration-500 rounded-md"></div>
+                </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/3 overflow-hidden relative cursor-pointer group">
+                    <img src="assets/images/models/porschesmall (2).webp" class="w-full h-full object-bottom    hover:scale-110 transition-all duration-500" alt="models">
+                <h3 class="group-hover:text-black transition-all duration-500 absolute top-5 left-5 text-white shadow-xl px-3 py-1 rounded-md text-4xl">911</h3>
+                <div class="btn-bg-white   flex absolute w-72 left-5 bottom-5  text-gray-100 rounded-md">
+                    <button class="left-active-btn z-20 text-black flex-1 py-2 px-3 cursor-pointer" >Build Your Own</button>
+                    <button class="z-20 right-active-btn flex-1 cursor-pointer py-2 px-3 transition-all duration-500 " >all Models</button>
+                    <div class="z-10 absolute top-0 left-0 w-1/2 h-full bg-white/75 transition-all duration-500 rounded-md"></div>
+                </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/3 overflow-hidden relative cursor-pointer group">
+                    <img src="assets/images/models/porschesmall (3).webp" class="w-full h-full object-bottom    hover:scale-110 transition-all duration-500" alt="models">
+                <h3 class="group-hover:text-black transition-all duration-500 absolute top-5 left-5 text-white shadow-xl px-3 py-1 rounded-md text-4xl">Teycan</h3>
+                <div class="btn-bg-white   flex absolute w-72 left-5 bottom-5    text-gray-100 rounded-md">
+                    <button class="left-active-btn z-20 text-black flex-1 py-2 px-3 cursor-pointer" >Build Your Own</button>
+                    <button class="z-20 right-active-btn flex-1 cursor-pointer py-2 px-3 transition-all duration-500 " >all Models</button>
+                    <div class="z-10 absolute top-0 left-0 w-1/2 h-full bg-white/75 transition-all duration-500 rounded-md"></div>
+                </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/3 overflow-hidden relative cursor-pointer group">
+                    <img src="assets/images/models/porschesmall (8).webp" class="w-full h-full object-bottom    hover:scale-110 transition-all duration-500" alt="models">
+                <h3 class="group-hover:text-black transition-all duration-500 absolute top-5 left-5 text-white shadow-xl px-3 py-1 rounded-md text-4xl">Panamera</h3>
+                <div class="btn-bg-white   flex absolute w-72 left-5 bottom-5    text-gray-100 rounded-md">
+                    <button class="left-active-btn z-20 text-black flex-1 py-2 px-3 cursor-pointer" >Build Your Own</button>
+                    <button class="z-20 right-active-btn flex-1 cursor-pointer py-2 px-3 transition-all duration-500 " >all Models</button>
+                    <div class="z-10 absolute top-0 left-0 w-1/2 h-full bg-white/75 transition-all duration-500 rounded-md"></div>
+                </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/3 overflow-hidden relative cursor-pointer group">
+                    <img src="assets/images/models/porschesmall (9).webp" class="w-full h-full object-bottom    hover:scale-110 transition-all duration-500" alt="models">
+                <h3 class="group-hover:text-black transition-all duration-500 absolute top-5 left-5 text-white shadow-xl px-3 py-1 rounded-md text-4xl">Macan</h3>
+                <div class="btn-bg-white   flex absolute w-72 left-5 bottom-5    text-gray-100 rounded-md">
+                    <button class="left-active-btn z-20 text-black flex-1 py-2 px-3 cursor-pointer" >Build Your Own</button>
+                    <button class="z-20 right-active-btn flex-1 cursor-pointer py-2 px-3 transition-all duration-500 " >all Models</button>
+                    <div class="z-10 absolute top-0 left-0 w-1/2 h-full bg-white/75 transition-all duration-500 rounded-md"></div>
+                </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/3 overflow-hidden relative cursor-pointer group">
+                    <img src="assets/images/models/porschesmall.webp" class="w-full h-full object-bottom    hover:scale-110 transition-all duration-500" alt="models">
+                <h3 class="group-hover:text-black transition-all duration-500 absolute top-5 left-5 text-white shadow-xl px-3 py-1 rounded-md text-4xl">Cayenne</h3>
+                <div class="btn-bg-white   flex absolute w-72 left-5 bottom-5    text-gray-100 rounded-md">
+                    <button class="left-active-btn z-20 text-black flex-1 py-2 px-3 cursor-pointer" >Build Your Own</button>
+                    <button class="z-20 right-active-btn flex-1 cursor-pointer py-2 px-3 transition-all duration-500 " >all Models</button>
+                    <div class="z-10 absolute top-0 left-0 w-1/2 h-full bg-white/75 transition-all duration-500 rounded-md"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+     </main>
     <!-- end main -->
     <!-- start footer -->
     <!-- end footer -->

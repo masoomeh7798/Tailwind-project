@@ -48,8 +48,16 @@
 #model::-webkit-scrollbar{
     display: none;
 }
-
 /* end hamburger menu */
+/* start models */
+#models h3{
+    text-shadow: 1px 0  5px black;
+}
+.btn-bg-white{
+    box-shadow: 0 0 5px 1px white;
+    background-color: rgba(0, 0, 0, 0.332);
+}
+/* end models */
 /* start slider */
 .animate-up-down{
     animation: up-down 2s infinite;
@@ -113,6 +121,12 @@
     }
     #hamburger-left{
         padding-top: 25%;
+    }
+    .btn-bg-white{
+        width: 200px;
+    }
+    .btn-bg-white{
+        font-size: 10px;
     }
 
 }
