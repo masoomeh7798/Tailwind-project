@@ -69,15 +69,58 @@ const menuIconEl=document.querySelector('#hamburger-menu > div')
 const hamburgerPartEl=document.querySelector('#hamburger')
 const hamburgerPartContentEl=document.querySelector('#hamburger > div')
 const closeHamEl=document.querySelector('.close-hamburger')
+const hamburgerLeftLiEls=[...document.querySelectorAll('#hamburger-left ul li')]
+const hamburgerRightEls=[...document.querySelectorAll('#hamburger-right > div')]
+const hamRight=document.querySelector('#hamburger-right')
+const hamLeft=document.querySelector('#hamburger-left')
+const backItemEl=document.querySelector('.back-item')
 
 menuIconEl.addEventListener('click',()=>{
     hamburgerPartEl.classList.add('show')
     hamburgerPartContentEl.classList.add('width-up')
-})
+});
 closeHamEl.addEventListener('click',()=>{
     hamburgerPartEl.classList.remove('show')
     hamburgerPartContentEl.classList.remove('width-up')
-})
+});
+if(window.screen.width>=640){
+for(let i=0;i<hamburgerLeftLiEls.length-1;i++){
+    hamburgerLeftLiEls[i].addEventListener('click',()=>{
+        hamburgerRightEls.map(e=>{
+            e.classList.add('width-down')
+           
+        });
+        document.querySelector(`#${hamburgerLeftLiEls[i].classList[0].split('-')[1]}`).classList.remove('width-down')
+    })
+}    
+}else{
+    for(let i=0;i<hamburgerLeftLiEls.length-1;i++){
+        hamburgerLeftLiEls[i].addEventListener('click',()=>{
+            hamburgerRightEls.map(e=>{
+                e.classList.add('invisibility')
+                hamLeft.classList.add('width-zero')
+                hamRight.classList.add('width-full')
+                hamLeft.style.overflow='hidden'
+                hamLeft.style.padding='18% 0'
+            });
+            document.querySelector(`#${hamburgerLeftLiEls[i].classList[0].split('-')[1]}`).classList.remove('invisibility')
+        })
+    } 
+    backItemEl.addEventListener('click',()=>{
+      hamburgerRightEls.map(e=>{
+        e.classList.add('invisibility')
+      })
+        hamLeft.classList.remove('width-zero')
+        hamRight.classList.remove('width-full')
+        hamLeft.style.overflow='none'
+        hamLeft.style.padding='18% 5%'
+        if(window.screen.width<=350){
+            hamLeft.style.padding='25% 5%'
+
+        }
+    })
+}
+
 
 // end hamburger menu
 // start functions
