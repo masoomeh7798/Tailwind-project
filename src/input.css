@@ -128,10 +128,11 @@
     .btn-bg-white{
         font-size: 10px;
     }
+    #near-porsche > div > div{
+        height: 250px;
+    }
 
 }
-
-
 /* end media query */
 /* start keyframes */
 @keyframes animate-ring{
@@ -157,7 +158,7 @@
     }
 
     50%{
-        transform:translateY(15px);
+        transform:translateY(5px);
     }
     100%{
         transform:translateY(0px);
@@ -169,7 +170,7 @@
         transform:translateY(0);
     }
     50%{
-        transform:translateY(-15px);
+        transform:translateY(-5px);
     }
     100%{
         transform:translateY(0px);
