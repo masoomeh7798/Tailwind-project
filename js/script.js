@@ -160,6 +160,9 @@ rightActiveEls.map(e=>{
 })
 
 // end models
+// start discover
+
+// end discover
 // start functions
 function bannerInterval(){
    interEnter=setInterval(()=>{

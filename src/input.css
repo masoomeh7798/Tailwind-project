@@ -49,15 +49,6 @@
     display: none;
 }
 /* end hamburger menu */
-/* start models */
-#models h3{
-    text-shadow: 1px 0  5px black;
-}
-.btn-bg-white{
-    box-shadow: 0 0 5px 1px white;
-    background-color: rgba(0, 0, 0, 0.332);
-}
-/* end models */
 /* start slider */
 .animate-up-down{
     animation: up-down 2s infinite;
@@ -69,6 +60,21 @@
     text-shadow: 1px 1px 2px white;
 }
 /* end slider */
+/* start models */
+#models h3{
+    text-shadow: 1px 0  5px black;
+}
+.btn-bg-white{
+    box-shadow: 0 0 5px 1px white;
+    background-color: rgba(0, 0, 0, 0.332);
+}
+/* end models */
+/* start discover */
+
+.discover-card:hover::before {
+    animation: gradient .5s 1;
+}
+/* end discover */
 /* start general classes */
 .show{
     visibility: visible !important;
@@ -177,10 +183,20 @@
     }
 
 }
+@keyframes gradient{
+    0%{
+       opacity: 0;
+    }
+
+    50%{
+       opacity: .5;
+    }
+
+    100%{
+      opacity: 1;
+    }
+}
 /* end keyframes */
-
-
-
 
 /* colors:light:
 red-950
